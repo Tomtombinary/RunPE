@@ -13,3 +13,5 @@
 
 
 // TODO: faites référence ici aux en-têtes supplémentaires nécessaires au programme
+#include <Windows.h>
+#include <winternl.h>
