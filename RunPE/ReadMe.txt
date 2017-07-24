@@ -16,6 +16,22 @@ RunPE.vcxproj.filters
 RunPE.cpp
     Il s'agit du fichier source principal de l'application.
 
+RunPE.h
+	Contient les prototypes des fonctions implémentées dans RunPE.cpp
+
+RunPEv2.cpp
+	Il s'agit d'une nouvelle version de l'application pour réaliser une injection RunPE plus "discrète"
+
+RunPEv2.h
+	Contient les prototypes des fonctions implémentées dans RunPEv2.cpp
+
+sysutils.cpp
+	Contient les fonctions utilitaires pour mapper des fichiers et ouvrir des processus
+
+sysutils.h
+	Contient les prototypes des fonctions implémentées dans sysutils.cpp 
+
+
 /////////////////////////////////////////////////////////////////////////////
 Autres fichiers standard :
 

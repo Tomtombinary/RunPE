@@ -30,6 +30,9 @@
     <ClInclude Include="RunPE.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="RunPEv2.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,6 +42,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="sysutils.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RunPEv2.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

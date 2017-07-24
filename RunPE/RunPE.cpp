@@ -82,9 +82,9 @@ DWORD CreateProcessAndInjectPE(LPCWSTR TargetExePath, LPCWSTR SourceExePath)
 */
 DWORD InjectPE(LPPROCESS_INFORMATION pProcessInfo, PVOID Buffer, DWORD SizeOfBuffer)
 {
+	DWORD dwOldProtect;
 	PEB Peb;
 	WOW64_CONTEXT Context;
-	DWORD dwOldProtect;
 	BOOL bSucess = FALSE;
 
 	ZeroMemory(&Context, sizeof(WOW64_CONTEXT));

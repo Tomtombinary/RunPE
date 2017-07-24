@@ -1,4 +1,6 @@
 #include "stdafx.h"
+#include "sysutils.h"
+
 #ifndef RUNPE_H
 #define RUNPE_H
 

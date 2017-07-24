@@ -3,6 +3,8 @@
 #include <TlHelp32.h>
 
 NtUnmapViewOfSectionFunc NtUnmapViewOfSection;
+NtMapViewOfSectionFunc NtMapViewOfSection;
+NtCreateSectionFunc NtCreateSection;
 
 /*
 * Mappe un fichier en mémoire, quelque soit le résultat c'est à l'appelant
@@ -80,6 +82,8 @@ DWORD ResolveNativeAPI()
 	if (hModNtdll)
 	{
 		NtUnmapViewOfSection = (NtUnmapViewOfSectionFunc)GetProcAddress(hModNtdll, "NtUnmapViewOfSection");
+		NtMapViewOfSection = (NtMapViewOfSectionFunc)GetProcAddress(hModNtdll, "NtMapViewOfSection");
+		NtCreateSection = (NtCreateSectionFunc)GetProcAddress(hModNtdll, "NtCreateSection");
 	}
 	else
 		dwReturnCode = -1;
